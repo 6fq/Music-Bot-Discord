@@ -13,7 +13,7 @@ module.exports = {
         inter.member.send({
             embeds: [
                 new EmbedBuilder()
-                    .setColor("444ceb")
+                    .setColor("d5d5d4")
                     .setTitle(`:arrow_forward: ${queue.current.title}`)
                     .setURL(queue.current.url)
                     .addFields(
