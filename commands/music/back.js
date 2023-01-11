@@ -12,6 +12,6 @@ module.exports = {
 
         await queue.back();
 
-        inter.reply({ content:`> **Playing the **previous** track <:file:1057602816941756416>**`});
+        inter.reply({ content:`> **Playing the **previous** track **`});
     },
 };
