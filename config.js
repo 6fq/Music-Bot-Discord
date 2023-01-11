@@ -1,6 +1,6 @@
 module.exports = {
     app: {
-        playing: 'iRateRP Maker .',
+        playing: '8ix ,, in top .',
         global: true,
         guild: '1056013612168269874'
     },
