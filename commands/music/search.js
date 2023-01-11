@@ -34,8 +34,8 @@ module.exports = {
         .setAuthor({ name: ` Results for ${song} `, iconURL: client.user.displayAvatarURL({ size: 1024, dynamic: true })})
         .setDescription(`${maxTracks.map((track, i) => `**${i + 1}**. ${track.title} | ${track.author}`).join('\n')}\n\nSelect choice between **1** and **${maxTracks.length}** or **cancel** `)
         .setTimestamp()
-        .setColor("444ceb")
-        .setFooter({ text: 'Music comes first - iRateRP', iconURL: inter.member.avatarURL({ dynamic: true })})
+        .setColor("d5d5d4")
+        .setFooter({ text: 'Music comes first - 8ix .', iconURL: inter.member.avatarURL({ dynamic: true })})
 
         inter.reply({ embeds: [embed] });
 
