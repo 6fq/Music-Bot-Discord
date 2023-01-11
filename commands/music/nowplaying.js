@@ -24,8 +24,8 @@ module.exports = {
         const embed = new EmbedBuilder()
         .setAuthor({ name: track.title,  iconURL: client.user.displayAvatarURL({ size: 1024, dynamic: true })})
         .setThumbnail(track.thumbnail)
-        .setDescription(`> ** <:file:1057602816941756416> Volume **${queue.volume}**%\nDuration **${trackDuration}**\nProgress ${progress}\nLoop mode **${methods[queue.repeatMode]}**\n **Requested by ${track.requestedBy}**`)
-        .setFooter({ text: 'Music comes first - iRateRP', iconURL: inter.member.avatarURL({ dynamic: true })})
+        .setDescription(`> ** Volume **${queue.volume}**%\nDuration **${trackDuration}**\nProgress ${progress}\nLoop mode **${methods[queue.repeatMode]}**\n **Requested by ${track.requestedBy}**`)
+        .setFooter({ text: 'Music comes first - 8ix .', iconURL: inter.member.avatarURL({ dynamic: true })})
         .setColor("444ceb")
         .setTimestamp()
 
