@@ -17,8 +17,8 @@ module.exports = async ({ client, inter, queue }) => {
     .setAuthor({ name: track.title,  iconURL: client.user.displayAvatarURL({ size: 1024, dynamic: true })})
     .setThumbnail(track.thumbnail)
     .setDescription(`> Volume **${queue.volume}**%\nDuration **${trackDuration}**\nProgress ${progress}\nLoop mode **${methods[queue.repeatMode]}**\nRequested by ${track.requestedBy}`)
-    .setFooter({ text: 'Music comes first - iRateRP ', iconURL: inter.member.avatarURL({ dynamic: true })})
-    .setColor("444ceb")
+    .setFooter({ text: 'Music comes first - 8ix . ', iconURL: inter.member.avatarURL({ dynamic: true })})
+    .setColor("d5d5d4")
     .setTimestamp()
 
     inter.reply({ embeds: [embed], ephemeral: true });
