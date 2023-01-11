@@ -12,7 +12,7 @@ player.on('trackStart', (queue, track) => {
     if (!client.config.opt.loopMessage && queue.repeatMode !== 0) return;
     const embed = new EmbedBuilder()
     .setAuthor({name: `Started playing ${track.title} in ${queue.connection.channel.name} 🎷`, iconURL: track.requestedBy.avatarURL()})
-    .setColor("444ceb")
+    .setColor("d5d5d4")
 
     const back = new ButtonBuilder()
     .setLabel('Back')
