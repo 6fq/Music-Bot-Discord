@@ -32,7 +32,7 @@ module.exports = {
         for (let song of queue.tracks) {
             if (song.title === track || song.url === track ) {
                 queue.skipTo(song)
-                return inter.reply({ content: `> **skiped to ${track} <:file:1057602816941756416>**` });
+                return inter.reply({ content: `> **skiped to ${track} **` });
             }
         }
         return inter.reply({ content: `> **Could not find ${track} ${inter.member}... try using the url or the full name of the song ? **`, ephemeral: true });    
@@ -42,7 +42,7 @@ module.exports = {
         const trackname = queue.tracks[index].title
         if (!trackname) return inter.reply({ content: `> **This track dose not seem to exist ${inter.member}...  try again ? **`, ephemeral: true });   
         queue.skipTo(index);
-        return inter.reply({ content: `> ** Jumped to ${trackname}  <:file:1057602816941756416>**` });
+        return inter.reply({ content: `> ** Jumped to ${trackname}  **` });
     }
          
     }
