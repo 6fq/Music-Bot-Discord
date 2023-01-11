@@ -36,7 +36,7 @@ module.exports = {
             return inter.reply({ content: `> I can't join the voice channel ${inter.member}... try again ?`, ephemeral: true});
         }
 
-       await inter.reply({ content:`> **Loading your** ${res.playlist ? 'playlist' : 'Song'}... <:file:1057602816941756416>`});
+       await inter.reply({ content:`> **Loading your** ${res.playlist ? 'playlist' : 'Song'}... `});
 
         res.playlist ? queue.addTracks(res.tracks) : queue.addTrack(res.tracks[0]);
 
